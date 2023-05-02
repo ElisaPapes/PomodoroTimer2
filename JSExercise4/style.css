@@ -1,0 +1,71 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+
+  --light-color: #FFFF;
+  --dark-color: hsla(240, 6%, 21%, 1);
+  --card-ns-color: 
+  #E1E1E6;  
+  --card-s-color: #02799D;
+}
+
+.chosen #outside{
+  fill: var(--card-s-color);
+}
+
+.chosen svg {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}
+ 
+.chosen #inside{
+  fill: var(--light-color);
+}
+
+body{
+  background-color: var(--light-color);
+  color: var(--dark-color);
+
+  font-family: 'Roboto', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.musics{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:3.2rem;
+  margin-left: 13.2rem;
+}
+
+.clock{
+  font-style: Medium;
+  font-size: 12.617rem;
+  line-height: 14.8rem;
+
+  /* Tira o espaço entre os itens */
+  display: flex;
+}
+
+.controls{
+  display: flex;
+  justify-content: center;
+  gap: 4.0rem;
+}
+
+button{
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+
